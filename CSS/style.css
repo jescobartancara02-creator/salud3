@@ -1,0 +1,80 @@
+
+
+/* Altura del carrusel principal */
+.carousel-img {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Forzar que los textos principales usen el nuevo azul elegante en vez de verde */
+.text-success {
+    color: #1e3d59 !important;
+}
+
+/* Cambiar los bordes y fondos que antes eran verdes */
+.border-success {
+    border-color: #1e3d59 !important;
+}
+.bg-success {
+    background-color: #1e3d59 !important;
+}
+
+/* Cambiar el estilo de los botones de los 9 servicios (Borde azul que se rellena) */
+.btn-outline-success {
+    color: #1e3d59 !important;
+    border-color: #1e3d59 !important;
+}
+
+.btn-outline-success:hover {
+    background-color: #1e3d59 !important;
+    color: #ffffff !important;
+    border-color: #1e3d59 !important;
+}
+
+/* Botón principal de los formularios */
+.btn-success {
+    background-color: #1e3d59 !important;
+    border-color: #1e3d59 !important;
+}
+.btn-success:hover {
+    background-color: #3552c6 !important; /* Un tono un poco más vivo al pasar el mouse */
+    border-color: #2b3ac6 !important;
+}
+
+/* Encabezados de tablas */
+.table-success {
+    --bs-table-bg: #1e3d59 !important;
+    color: white !important;
+}
+
+/* EFECTO HOVER ELEGANTE PARA TARJETAS */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    /* Sombra con un toque azul marino sutil */
+    box-shadow: 0 10px 20px rgba(30, 61, 89, 0.15) !important;
+}
+
+/* GALERÍA DE IMÁGENES */
+.galeria-img {
+    transition: filter 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.galeria-img:hover {
+    filter: brightness(92%);
+    transform: scale(1.02);
+}
+
+/* ANIMACIONES NATIVAS CSS3 */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+main {
+    animation: fadeIn 0.6s ease-out;
+}
